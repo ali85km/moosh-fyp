@@ -10,40 +10,45 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class WorkLifeBalance
  */
-@WebServlet("/WorkLifeBalance")
+@WebServlet(name = "WorkLifeBalance",
+        urlPatterns = {"/work_life_balance"})
 public class WorkLifeBalance extends HttpServlet {
-	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
-	public WorkLifeBalance() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doGet(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
-		System.out.println(request.getParameter("button"));
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public WorkLifeBalance() {
+        super();
+    }
 
-		this.getServletContext().getRequestDispatcher("/WorkLifeBalance.jsp")
-				.forward(request, response);
-	}
+    /**
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+     *      response)
+     */
+    @Override
+    protected void doGet(HttpServletRequest request,
+            HttpServletResponse response) throws ServletException, IOException {
+        System.out.println(request.getParameter("button"));
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doPost(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
-		System.out.println(request.getParameter("Previous"));
+        this.getServletContext()
+                .getRequestDispatcher(
+                        "/WEB-INF/telecommuter/work_life_balance.jsp")
+                .forward(request, response);
+    }
 
-		this.getServletContext().getRequestDispatcher("/WorkLifeBalance.jsp")
-				.forward(request, response);
-	}
+    /**
+     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+     *      response)
+     */
+    @Override
+    protected void doPost(HttpServletRequest request,
+            HttpServletResponse response) throws ServletException, IOException {
+        System.out.println(request.getParameter("Previous"));
+
+        this.getServletContext().getRequestDispatcher("/WorkLifeBalance.jsp")
+                .forward(request, response);
+    }
 
 }

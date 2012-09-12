@@ -10,37 +10,39 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class SignupController
  */
-@WebServlet(name = "SignupController", urlPatterns = { "/signup" })
+@WebServlet(name = "SignupController",
+        urlPatterns = {"/signup"})
 public class SignupController extends HttpServlet {
-	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
-	public SignupController() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doGet(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public SignupController() {
+        super();
+    }
 
-		this.getServletContext().getRequestDispatcher("/signup.jsp")
-		.forward(request, response);
-	
-	}
+    /**
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+     *      response)
+     */
+    @Override
+    protected void doGet(HttpServletRequest request,
+            HttpServletResponse response) throws ServletException, IOException {
+        this.getServletContext()
+                .getRequestDispatcher("/WEB-INF/general/signup.jsp")
+                .forward(request, response);
+    }
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doPost(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-	}
+    /**
+     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+     *      response)
+     */
+    @Override
+    protected void doPost(HttpServletRequest request,
+            HttpServletResponse response) throws ServletException, IOException {
+        // TODO Auto-generated method stub
+    }
 
 }
