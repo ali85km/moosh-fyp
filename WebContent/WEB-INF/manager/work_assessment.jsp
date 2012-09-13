@@ -10,7 +10,7 @@
 <style type="text/css">
 <!--
 body {
-	background-image: url(rsc/Background.jpg);
+	background-image: url(rsc/background.jpg);
 }
 -->
 </style>
@@ -20,11 +20,11 @@ body {
 	<table width="640" height="1713" border="4" align="center">
 		<tr>
 			<td height="159"><p>
-					<img src="rsc/Title.jpg" width="800" height="155" />
+					<img src="rsc/title.jpg" width="800" height="155" />
 				</p></td>
 		</tr>
 		<tr>
-			<td height="1515" background="rsc\TableBG.jpg"><p>&nbsp;</p>
+			<td height="1515" background="rsc\table_background.jpg"><p>&nbsp;</p>
 				<p>
 					<strong>Work assessment factors</strong>
 				</p>
@@ -571,7 +571,8 @@ body {
 					</table>
 				</form>
 				<div align="center"></div>
-				<form id="form11" name="form11" method="post" action="employment_assessment">
+				<form id="form11" name="form11" method="post"
+					action="work_assessment_validator">
 					<label></label> <label></label>
 					<div align="center">
 						<input type="submit" name="button2" id="button2" value="Next" />

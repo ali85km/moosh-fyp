@@ -10,7 +10,7 @@
 <style type="text/css">
 <!--
 body {
-	background-image: url(rsc/Background.jpg);
+	background-image: url(rsc/background.jpg);
 }
 -->
 </style>
@@ -19,10 +19,10 @@ body {
 <body>
 	<table width="808" height="236" border="4" align="center">
 		<tr>
-			<td height="160"><img src="rsc/Title.jpg" width="800" height="155" /></td>
+			<td height="160"><img src="rsc/title.jpg" width="800" height="155" /></td>
 		</tr>
 		<tr>
-			<td background="rsc/TableBG.jpg"><p>
+			<td background="rsc/table_background.jpg"><p>
 					<strong>Monitoring assessment factors</strong>
 				</p>
 				<p>

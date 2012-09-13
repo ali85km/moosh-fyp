@@ -10,7 +10,7 @@
 <style type="text/css">
 <!--
 body {
-	background-image: url(rsc/Background.jpg);
+	background-image: url(rsc/background.jpg);
 }
 
 .style3 {
@@ -23,11 +23,11 @@ body {
 <body>
 	<table width="809" height="695" border="4" align="center">
 		<tr>
-			<td width="865" height="113"><img src="rsc/Title.jpg"
+			<td width="865" height="113"><img src="rsc/title.jpg"
 				width="800" height="155" /></td>
 		</tr>
 		<tr>
-			<td height="536" background="rsc/TableBG.jpg"><p>&nbsp;</p>
+			<td height="536" background="rsc/table_background.jpg"><p>&nbsp;</p>
 				<p align="center">
 					<strong>Meeting Schedule</strong>
 				</p>
@@ -328,7 +328,8 @@ body {
 					</tr>
 				</table>
 				<p>&nbsp;</p>
-				<form id="form13" name="form13" method="post" action="work_hours">
+				<form id="form13" name="form13" method="post"
+					action="meeting_hours_validator">
 					<label></label> <label></label>
 					<div align="left">
 						<label> <input type="submit" name="button3" id="button3"

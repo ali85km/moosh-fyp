@@ -10,7 +10,7 @@
 <style type="text/css">
 <!--
 body {
-	background-image: url(rsc/Background.jpg);
+	background-image: url(rsc/background.jpg);
 }
 -->
 </style>
@@ -19,11 +19,11 @@ body {
 <body>
 	<table width="656" height="391" border="4" align="center">
 		<tr>
-			<td height="160"><img src="rsc/Title.jpg" width="800"
+			<td height="160"><img src="rsc/title.jpg" width="800"
 				height="155" /></td>
 		</tr>
 		<tr>
-			<td background="rsc/TableBG.jpg"><p>&nbsp;</p>
+			<td background="rsc/table_background.jpg"><p>&nbsp;</p>
 
 				<p align="center">
 					<strong>Commitment</strong>

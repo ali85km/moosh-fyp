@@ -9,7 +9,7 @@
 <style type="text/css">
 <!--
 body {
-	background-image: url(rsc/Background.jpg);
+	background-image: url(rsc/background.jpg);
 }
 -->
 </style>
@@ -18,11 +18,11 @@ body {
 <body>
 	<table width="816" height="578" border="4" align="center">
 		<tr>
-			<td height="160"><img src="rsc/Title.jpg" width="800" height="155" /></td>
+			<td height="160"><img src="rsc/title.jpg" width="800" height="155" /></td>
 		</tr>
 		<tr>
 			<td height="366"><p align="left">
-					<img src="rsc/Login_Icon.gif" alt="" width="183" height="157"
+					<img src="rsc/login_icon.gif" alt="" width="183" height="157"
 						align="right" />
 				</p>
 				<form id="form6" name="form1" method="post" action="">
@@ -40,13 +40,13 @@ body {
 					</label> <input type="submit" name="button" id="button" value="Sign in" />
 				</form>
 				<p>&nbsp;</p>
-				<form id="form4" name="form4" method="post" action="/manager">
+				<form id="form4" name="form4" method="get" action="manager">
 					<label> <input type="submit" name="button3" id="button3"
 						value="Temp Manager" />
 					</label>
 				</form>
-				<form id="form9" name="form9" method="post"
-					action="/telecommuter">
+				<form id="form9" name="form9" method="get"
+					action="telecommuter">
 					<label> <input type="submit" name="button4" id="button4"
 						value="Temp Telecommuter" />
 					</label>
@@ -59,7 +59,7 @@ body {
 								align="center">
 								<tr>
 									<td width="195"><form id="form5" name="form5"
-											method="post" action="/signup">
+											method="get" action="signup">
 											<label> <input type="submit" name="button2"
 												align="center" id="button2" value="Create an account" />
 											</label>

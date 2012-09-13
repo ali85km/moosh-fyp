@@ -9,7 +9,7 @@
 <style type="text/css">
 <!--
 body {
-	background-image: url(../rsc/background.jpg);
+	background-image: url(rsc/background.jpg);
 }
 .style1 {
 	color: #CCCCCC;
@@ -28,7 +28,7 @@ body {
 <body>
 <table width="800" height="589" border="0" align="center">
   <tr>
-    <td height="317"><div align="center"><img src="../rsc/home_page_pic.jpg" width="457" height="263" /></div></td>
+    <td height="317"><div align="center"><img src="rsc/homepage.jpg" width="457" height="263" /></div></td>
   </tr>
   <tr>
     <td height="60"><p align="center" class="style8">WELCOME TO THE SUNRISE KPI  SYSTEM.</p>    </td>
@@ -54,7 +54,7 @@ body {
     <td height="36"><div align="center">
       <form id="form1" name="form1" method="get" action="login">
         <label>
-        <input name="button" type="submit" class="style6" id="button" value="Click here to proceed" />
+        <input name="button" type="submit" class="style6" id="button" value="Proceed" />
         </label>
       </form>
       </div></td>

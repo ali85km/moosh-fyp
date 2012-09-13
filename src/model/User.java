@@ -4,121 +4,120 @@ import java.util.Date;
 
 public class User {
 
-	private String firstname;
-	private String lastname;
-	private String username;
-	private boolean gender;
-	private Date birthday;
-	private Citizenship citizenship;
-	private String passport;
-	private String homePhone;
-	private String cellPhone;
-	private String email;
-	private String address;
+    private String firstname;
+    private String lastname;
+    private String username;
+    private boolean gender;
+    private Date birthday;
+    private Citizenship citizenship;
+    private String passport;
+    private String homePhone;
+    private String cellPhone;
+    private String email;
+    private String address;
 
-	public User(String firstname, String lastname, String username,
-			boolean gender, Date birthday, Citizenship citizenship,
-			String passport, String homePhone, String cellPhone,
-			String address, String email) {
-		this.firstname = firstname;
-		this.lastname = lastname;
-		this.username = username;
-		this.gender = gender;
-		this.birthday = birthday;
-		this.citizenship = citizenship;
-		this.passport = passport;
-		this.homePhone = homePhone;
-		this.cellPhone = cellPhone;
-		this.email = email;
-		this.address = address;
-	}
+    public User(String firstnameIn, String lastnameIn, String usernameIn,
+            boolean genderIn, Date birthdayIn, Citizenship citizenshipIn,
+            String passportIn, String homePhoneIn, String cellPhoneIn,
+            String addressIn, String emailIn) {
+        this.firstname = firstnameIn;
+        this.lastname = lastnameIn;
+        this.username = usernameIn;
+        this.gender = genderIn;
+        this.birthday = birthdayIn;
+        this.citizenship = citizenshipIn;
+        this.passport = passportIn;
+        this.homePhone = homePhoneIn;
+        this.cellPhone = cellPhoneIn;
+        this.email = emailIn;
+        this.address = addressIn;
+    }
 
-	public String getFirstname() {
-		return firstname;
-	}
+    public String getAddress() {
+        return this.address;
+    }
 
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
-	}
+    public Date getBirthday() {
+        return this.birthday;
+    }
 
-	public String getLastname() {
-		return lastname;
-	}
+    public String getCellPhone() {
+        return this.cellPhone;
+    }
 
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
+    public Citizenship getCitizenship() {
+        return this.citizenship;
+    }
 
-	public String getUsername() {
-		return username;
-	}
+    public String getEmail() {
+        return this.email;
+    }
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    public String getFirstname() {
+        return this.firstname;
+    }
 
-	public boolean isGender() {
-		return gender;
-	}
+    public String getHomePhone() {
+        return this.homePhone;
+    }
 
-	public void setGender(boolean gender) {
-		this.gender = gender;
-	}
+    public String getLastname() {
+        return this.lastname;
+    }
 
-	public Date getBirthday() {
-		return birthday;
-	}
+    public String getPassport() {
+        return this.passport;
+    }
 
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
-	}
+    public String getUsername() {
+        return this.username;
+    }
 
-	public Citizenship getCitizenship() {
-		return citizenship;
-	}
+    public boolean isGender() {
+        return this.gender;
+    }
 
-	public void setCitizenship(Citizenship citizenship) {
-		this.citizenship = citizenship;
-	}
+    public void setAddress(String addressIn) {
+        this.address = addressIn;
+    }
 
-	public String getPassport() {
-		return passport;
-	}
+    public void setBirthday(Date birthdayIn) {
+        this.birthday = birthdayIn;
+    }
 
-	public void setPassport(String passport) {
-		this.passport = passport;
-	}
+    public void setCellPhone(String cellPhoneIn) {
+        this.cellPhone = cellPhoneIn;
+    }
 
-	public String getHomePhone() {
-		return homePhone;
-	}
+    public void setCitizenship(Citizenship citizenshipIn) {
+        this.citizenship = citizenshipIn;
+    }
 
-	public void setHomePhone(String homePhone) {
-		this.homePhone = homePhone;
-	}
+    public void setEmail(String emailIn) {
+        this.email = emailIn;
+    }
 
-	public String getCellPhone() {
-		return cellPhone;
-	}
+    public void setFirstname(String firstnameIn) {
+        this.firstname = firstnameIn;
+    }
 
-	public void setCellPhone(String cellPhone) {
-		this.cellPhone = cellPhone;
-	}
+    public void setGender(boolean genderIn) {
+        this.gender = genderIn;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public void setHomePhone(String homePhoneIn) {
+        this.homePhone = homePhoneIn;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public void setLastname(String lastnameIn) {
+        this.lastname = lastnameIn;
+    }
 
-	public String getAddress() {
-		return address;
-	}
+    public void setPassport(String passportIn) {
+        this.passport = passportIn;
+    }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
+    public void setUsername(String usernameIn) {
+        this.username = usernameIn;
+    }
 }

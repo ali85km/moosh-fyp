@@ -4,59 +4,59 @@ import java.util.Date;
 
 public class Task {
 
-	private int id;
-	private String title;
-	private Date assignDate;
-	private Date dueDate;
-	private Date endDate;
+    private int id;
+    private String title;
+    private Date assignDate;
+    private Date dueDate;
+    private Date endDate;
 
-	public Task(int id, String title, Date assignDate, Date dueDate,
-			Date endDate) {
-		this.id = id;
-		this.title = title;
-		this.assignDate = assignDate;
-		this.dueDate = dueDate;
-		this.endDate = endDate;
-	}
+    public Task(int idIn, String titleIn, Date assignDateIn, Date dueDateIn,
+            Date endDateIn) {
+        this.id = idIn;
+        this.title = titleIn;
+        this.assignDate = assignDateIn;
+        this.dueDate = dueDateIn;
+        this.endDate = endDateIn;
+    }
 
-	public int getId() {
-		return id;
-	}
+    public int getId() {
+        return this.id;
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public void setId(int idIn) {
+        this.id = idIn;
+    }
 
-	public String getTitle() {
-		return title;
-	}
+    public String getTitle() {
+        return this.title;
+    }
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    public void setTitle(String titleIn) {
+        this.title = titleIn;
+    }
 
-	public Date getAssignDate() {
-		return assignDate;
-	}
+    public Date getAssignDate() {
+        return this.assignDate;
+    }
 
-	public void setAssignDate(Date assignDate) {
-		this.assignDate = assignDate;
-	}
+    public void setAssignDate(Date assignDateIn) {
+        this.assignDate = assignDateIn;
+    }
 
-	public Date getDueDate() {
-		return dueDate;
-	}
+    public Date getDueDate() {
+        return this.dueDate;
+    }
 
-	public void setDueDate(Date dueDate) {
-		this.dueDate = dueDate;
-	}
+    public void setDueDate(Date dueDateIn) {
+        this.dueDate = dueDateIn;
+    }
 
-	public Date getEndDate() {
-		return endDate;
-	}
+    public Date getEndDate() {
+        return this.endDate;
+    }
 
-	public void setEndDate(Date endDate) {
-		this.endDate = endDate;
-	}
+    public void setEndDate(Date endDateIn) {
+        this.endDate = endDateIn;
+    }
 
 }

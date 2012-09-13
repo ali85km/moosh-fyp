@@ -10,7 +10,7 @@
 <style type="text/css">
 <!--
 body {
-	background-image: url(rsc/Background.jpg);
+	background-image: url(rsc/background.jpg);
 }
 -->
 </style>
@@ -19,10 +19,10 @@ body {
 <body>
 	<table width="200" border="4" align="center">
 		<tr>
-			<td><img src="rsc/Title.jpg" width="800" height="155" /></td>
+			<td><img src="rsc/title.jpg" width="800" height="155" /></td>
 		</tr>
 		<tr>
-			<td background="rsc/TableBG.jpg"><p>&nbsp;</p>
+			<td background="rsc/table_background.jpg"><p>&nbsp;</p>
 				<p align="center">
 					<strong>Work/Life balance</strong>
 				</p>
@@ -205,7 +205,7 @@ body {
 				</form>
 				<p>&nbsp;</p>
 				<form id="form13" name="form13" method="post"
-					action="announcement">
+					action="work_life_balance_validator">
 					<label></label> <label></label>
 					<div align="left">
 						<label> <input type="submit" name="button3" id="button3"
@@ -214,8 +214,7 @@ body {
 					</div>
 				</form>
 
-				<form id="form14" name="form14" method="post"
-					action="commitment">
+				<form id="form14" name="form14" method="post" action="commitment">
 					<label></label> <label></label>
 					<div align=right>
 						<label> <input type="submit" name="button4" id="button4"

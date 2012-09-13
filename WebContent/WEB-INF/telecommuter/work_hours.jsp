@@ -10,7 +10,7 @@
 <style type="text/css">
 <!--
 body {
-	background-image: url(rsc/Background.jpg);
+	background-image: url(rsc/background.jpg);
 }
 -->
 </style>
@@ -19,21 +19,22 @@ body {
 <body>
 	<table width="697" height="641" border="4" align="center">
 		<tr>
-			<td width="652" height="159"><img src="rsc/Title.jpg"
+			<td width="652" height="159"><img src="rsc/title.jpg"
 				width="800" height="155" /></td>
 		</tr>
 		<tr>
-			<td height="345" background="rsc/TableBG.jpg"><form id="form8"
-					name="form8" method="post" action="">
+			<td height="345" background="rsc/table_background.jpg"><form
+					id="form8" name="form8" method="post" action="">
 					<p>&nbsp;</p>
 					<p>&nbsp;</p>
 					<p align="center">
 						<strong>Work Hours</strong>
 					</p>
-					<p align="center">Pleas select your daily work hours for all weeks.</p>
-        			<p align="center">&nbsp;</p>
-					
-										
+					<p align="center">Pleas select your daily work hours for all
+						weeks.</p>
+					<p align="center">&nbsp;</p>
+
+
 					<p align="center">&nbsp;</p>
 					<table width="615" height="247" border="4" align="center">
 						<tr>
@@ -496,7 +497,7 @@ body {
 
 				<p>&nbsp;</p>
 				<form id="form9" name="form9" method="post"
-					action="task_schedule">
+					action="work_hours_validator">
 					<label></label> <label></label>
 					<div align="left">
 						<label> <input type="submit" name="button3" id="button3"

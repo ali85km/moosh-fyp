@@ -12,7 +12,7 @@
 <style type="text/css">
 <!--
 body {
-	background-image: url(rsc/Background.jpg);
+	background-image: url(rsc/background.jpg);
 }
 
 .style1 {
@@ -38,7 +38,7 @@ body {
 	<table width="800" height="702" border="4" align="center">
 		<tr>
 			<td height="189"><div align="center">
-					<img src="rsc/Title.jpg" width="780" height="183" />
+					<img src="rsc/title.jpg" width="780" height="183" />
 				</div></td>
 		</tr>
 		<tr>
@@ -47,11 +47,11 @@ body {
 						<ul>
 							<li><a href="#">View Forms</a></li>
 							<li><a href="#">Telecommuter's Form</a></li>
-							<li><a href="WorkAssessment.jsp">Evaluate telecommuter</a></li>
+							<li><a href="work_assessment">Evaluate telecommuter</a></li>
 						</ul></li>
 					<li><a href="#">Result</a></li>
 					<li><a href="#">KPI Setting</a></li>
-					<li><a href="index.jsp">Logout</a></li>
+					<li><a href="index">Logout</a></li>
 				</ul></td>
 		</tr>
 		<tr>

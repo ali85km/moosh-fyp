@@ -12,7 +12,7 @@
 <style type="text/css">
 <!--
 body {
-	background-image: url(rsc/Background.jpg);
+	background-image: url(rsc/background.jpg);
 }
 
 .style1 {
@@ -39,7 +39,7 @@ body {
 <body>
 	<table width="800" height="665" border="4" align="center">
 		<tr>
-			<td height="189"><img src="rsc/Title.jpg"
+			<td height="189"><img src="rsc/title.jpg"
 				width="781" height="218" /></td>
 		</tr>
 		<tr>
@@ -47,10 +47,10 @@ body {
 					<li><a class="MenuBarItemSubmenu" href="#">Forms</a>
 						<ul>									
 					<li><a href="#">View Forms</a></li>
-					<li><a href="EquipmentUsage.jsp">Fill Forms</a></li>
+					<li><a href="equipment_usage">Fill Forms</a></li>
 						</ul></li>
 					<li><a href="#">Result</a></li>
-					<li><a href="index.jsp">Logout</a></li>
+					<li><a href="index">Logout</a></li>
 				</ul></td>
 		</tr>
 		<tr>

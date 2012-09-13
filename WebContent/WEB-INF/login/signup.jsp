@@ -137,7 +137,7 @@ body {
 								</label>
 							</form>
 							<form id="form10" name="form10" method="post" action="">
-								<label>phone number<br /> <input type="text"
+								<label>Phone number<br /> <input type="text"
 									name="textfield9" id="textfield9" />
 								</label>
 							</form>
@@ -147,7 +147,7 @@ body {
 								</label>
 							</form>
 							<form id="form12" name="form12" method="post" action="">
-								<label>E-mail Address<br /> <input type="text"
+								<label>E-mail address<br /> <input type="text"
 									name="textfield11" id="textfield11" />
 								</label>
 							</form>
@@ -163,7 +163,7 @@ body {
 		</tr>
 		<tr>
 			<td height="56"><form id="form14" name="form14" method="post"
-					action="login">
+					action="signup_validator">
 					<label></label>
 
 
