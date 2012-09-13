@@ -1246,8 +1246,7 @@ body {
 					</table>
 				</form>
 				<p>&nbsp;</p>
-				<form id="form31" name="form31" method="post"
-					action="work_assessment">
+				<form id="form31" name="form31" method="get" action="job_commitment">
 					<label></label> <label></label>
 					<div align="left">
 						<label> <input type="submit" name="button3" id="button3"
@@ -1257,7 +1256,7 @@ body {
 				</form>
 
 				<form id="form32" name="form32" method="post"
-					action="employment_assessment">
+					action="employment_assessment_validator">
 					<label></label> <label></label>
 					<div align=right>
 						<label> <input type="submit" name="button4" id="button4"

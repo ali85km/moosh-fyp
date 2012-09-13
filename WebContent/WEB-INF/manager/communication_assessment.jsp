@@ -345,7 +345,7 @@ body {
 					<p>&nbsp;</p>
 				</form>
 				<p>&nbsp;</p>
-				<form id="form13" name="form13" method="post"
+				<form id="form13" name="form13" method="get"
 					action="personal_assessment">
 					<label></label> <label></label>
 					<div align="left">

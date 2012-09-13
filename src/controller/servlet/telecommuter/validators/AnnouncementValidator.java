@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class Announcement
  */
 @WebServlet(name = "AnnouncementValidator",
-        urlPatterns = {"/annoucement_validator"})
+        urlPatterns = {"/announcement_validator"})
 public class AnnouncementValidator extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
@@ -33,8 +33,6 @@ public class AnnouncementValidator extends HttpServlet {
         // TODO : validate.
 
         // TODO : if good, else.
-        // TODO : here we must validate everything, and go to the main menu.
-        this.getServletContext().getRequestDispatcher("......????")
-                .forward(request, response);
+        response.sendRedirect("work_life_balance");
     }
 }

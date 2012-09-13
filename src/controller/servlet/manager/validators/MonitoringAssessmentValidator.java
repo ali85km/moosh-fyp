@@ -34,7 +34,6 @@ public class MonitoringAssessmentValidator extends HttpServlet {
 
         // TODO : if good, else.
         // TODO : where to go after going through all the forms ?
-        this.getServletContext().getRequestDispatcher("??????")
-                .forward(request, response);
+        response.sendRedirect("??????");
     }
 }

@@ -33,7 +33,6 @@ public class TaskScheduleValidator extends HttpServlet {
         // TODO : validate.
 
         // TODO : if good, else.
-        this.getServletContext().getRequestDispatcher("/task_schedule")
-                .forward(request, response);
+        response.sendRedirect("work_hours");
     }
 }

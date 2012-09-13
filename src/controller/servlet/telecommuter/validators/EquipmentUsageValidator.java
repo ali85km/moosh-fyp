@@ -33,7 +33,6 @@ public class EquipmentUsageValidator extends HttpServlet {
         // TODO : validate.
 
         // TODO : if good, else.
-        this.getServletContext().getRequestDispatcher("/work_hours")
-                .forward(request, response);
+        response.sendRedirect("task_schedule");
     }
 }

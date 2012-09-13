@@ -314,7 +314,7 @@ body {
 				</form>
 				<p>&nbsp;</p>
 				<form id="form8" name="form8" method="post"
-					action="telecommuter">
+					action="commitment_validator">
 					<label>
 						<div align="center">
 							<input type="submit" name="button" id="button" value="Submit" />

@@ -31,7 +31,8 @@ public class ContactSchedule extends HttpServlet {
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         this.getServletContext()
-                .getRequestDispatcher("/WEB-INF/manager/contact_schedule.jsp")
+                .getRequestDispatcher(
+                        "/WEB-INF/telecommuter/contact_schedule.jsp")
                 .forward(request, response);
     }
 }

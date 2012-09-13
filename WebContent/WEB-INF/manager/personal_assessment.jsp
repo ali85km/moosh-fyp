@@ -583,7 +583,7 @@ body {
 				</form>
 
 				<p>&nbsp;</p>
-				<form id="form13" name="form13" method="post"
+				<form id="form13" name="form13" method="get"
 					action="employment_assessment">
 					<label></label> <label></label>
 					<div align="left">

@@ -33,8 +33,6 @@ public class WorkAssessmentValidator extends HttpServlet {
         // TODO : validate.
 
         // TODO : if good, else.
-        this.getServletContext()
-                .getRequestDispatcher("/communication_assessment")
-                .forward(request, response);
+        response.sendRedirect("employment_assessment");
     }
 }

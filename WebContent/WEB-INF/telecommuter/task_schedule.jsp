@@ -1805,7 +1805,7 @@ body {
 					</tr>
 				</table>
 				<p>&nbsp;</p>
-				<form id="form13" name="form13" method="post"
+				<form id="form13" name="form13" method="get"
 					action="equipment_usage">
 					<label></label> <label></label>
 					<div align="left">

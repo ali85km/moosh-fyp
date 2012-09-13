@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class Announcement
  */
 @WebServlet(name = "Announcement",
-        urlPatterns = {"/annoucement"})
+        urlPatterns = {"/announcement"})
 public class Announcement extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
@@ -31,7 +31,7 @@ public class Announcement extends HttpServlet {
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         this.getServletContext()
-                .getRequestDispatcher("/WEB-INF/manager/announcement.jsp")
+                .getRequestDispatcher("/WEB-INF/telecommuter/announcement.jsp")
                 .forward(request, response);
     }
 }

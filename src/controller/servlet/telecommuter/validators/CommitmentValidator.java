@@ -33,8 +33,7 @@ public class CommitmentValidator extends HttpServlet {
         // TODO : validate.
 
         // TODO : if good, else.
-        this.getServletContext()
-                .getRequestDispatcher("/work_life")
-                .forward(request, response);
+        // FIXME
+        response.sendRedirect("????");
     }
 }

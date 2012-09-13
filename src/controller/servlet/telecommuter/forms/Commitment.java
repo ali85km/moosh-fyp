@@ -31,7 +31,7 @@ public class Commitment extends HttpServlet {
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         this.getServletContext()
-                .getRequestDispatcher("/WEB-INF/manager/commitment.jsp")
+                .getRequestDispatcher("/WEB-INF/telecommuter/commitment.jsp")
                 .forward(request, response);
     }
 }

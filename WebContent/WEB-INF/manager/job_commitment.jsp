@@ -19,8 +19,8 @@ body {
 <body>
 	<table width="685" height="1353" border="4" align="center">
 		<tr>
-			<td height="159"><img src="rsc/title.jpg"
-				width="800" height="155" /></td>
+			<td height="159"><img src="rsc/title.jpg" width="800"
+				height="155" /></td>
 		</tr>
 		<tr>
 			<td background="rsc/table_background.jpg"><p>&nbsp;</p>
@@ -298,7 +298,7 @@ body {
 					</table>
 				</form>
 				<p>&nbsp;</p>
-				<form id="form13" name="form13" method="post"
+				<form id="form13" name="form13" method="get"
 					action="communication_assessment">
 					<label></label> <label></label>
 					<div align="left">
@@ -308,7 +308,8 @@ body {
 					</div>
 				</form>
 
-				<form id="form14" name="form14" method="post" action="job_commitment_validator">
+				<form id="form14" name="form14" method="post"
+					action="job_commitment_validator">
 					<label></label> <label></label>
 					<div align=right>
 						<label> <input type="submit" name="button4" id="button4"

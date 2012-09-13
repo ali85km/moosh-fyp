@@ -204,8 +204,7 @@ body {
 					</table>
 				</form>
 				<p>&nbsp;</p>
-				<form id="form13" name="form13" method="post"
-					action="work_life_balance_validator">
+				<form id="form13" name="form13" method="get" action="announcement">
 					<label></label> <label></label>
 					<div align="left">
 						<label> <input type="submit" name="button3" id="button3"
@@ -214,7 +213,8 @@ body {
 					</div>
 				</form>
 
-				<form id="form14" name="form14" method="post" action="commitment">
+				<form id="form14" name="form14" method="post"
+					action="work_life_balance_validator">
 					<label></label> <label></label>
 					<div align=right>
 						<label> <input type="submit" name="button4" id="button4"

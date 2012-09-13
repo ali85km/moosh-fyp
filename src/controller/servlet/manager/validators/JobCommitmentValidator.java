@@ -33,7 +33,6 @@ public class JobCommitmentValidator extends HttpServlet {
         // TODO : validate.
 
         // TODO : if good, else.
-        this.getServletContext().getRequestDispatcher("/employment_assessment")
-                .forward(request, response);
+        response.sendRedirect("monitoring_assessment");
     }
 }

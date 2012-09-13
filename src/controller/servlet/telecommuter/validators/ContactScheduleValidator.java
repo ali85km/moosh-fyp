@@ -33,7 +33,6 @@ public class ContactScheduleValidator extends HttpServlet {
         // TODO : validate.
 
         // TODO : if good, else.
-        this.getServletContext().getRequestDispatcher("/contact_schedule")
-                .forward(request, response);
+        response.sendRedirect("announcement");
     }
 }

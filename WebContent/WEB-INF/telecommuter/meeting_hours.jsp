@@ -328,8 +328,7 @@ body {
 					</tr>
 				</table>
 				<p>&nbsp;</p>
-				<form id="form13" name="form13" method="post"
-					action="meeting_hours_validator">
+				<form id="form13" name="form13" method="get" action="work_hours">
 					<label></label> <label></label>
 					<div align="left">
 						<label> <input type="submit" name="button3" id="button3"
@@ -339,7 +338,7 @@ body {
 				</form>
 
 				<form id="form14" name="form14" method="post"
-					action="contact_schedule">
+					action="meeting_hours_validator">
 					<label></label> <label></label>
 					<div align=right>
 						<label> <input type="submit" name="button4" id="button4"

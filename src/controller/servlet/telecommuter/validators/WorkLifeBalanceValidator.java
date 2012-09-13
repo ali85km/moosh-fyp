@@ -35,7 +35,6 @@ public class WorkLifeBalanceValidator extends HttpServlet {
         // TODO : if good, else.
         System.out.println(request.getParameter("button"));
 
-        this.getServletContext().getRequestDispatcher("/work_life_balance")
-                .forward(request, response);
+        response.sendRedirect("commitment");
     }
 }

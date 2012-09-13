@@ -384,7 +384,7 @@ body {
 						</tr>
 					</table>
 				</form>
-				<form id="form1" name="form1" method="post" action="manager">
+				<form id="form1" name="form1" method="post" action="monitoring_assessment_validator">
 					<label></label> <label></label>
 					<div align="center"></div>
 				<p align="center">
