@@ -1,14 +1,16 @@
 package model;
 
-import java.util.Date;
 
 public class User {
 
+	
+		
     private String firstname;
     private String lastname;
     private String username;
+    private String password;
     private boolean gender;
-    private Date birthday;
+    private String birthday;
     private Citizenship citizenship;
     private String passport;
     private String homePhone;
@@ -16,28 +18,32 @@ public class User {
     private String email;
     private String address;
 
-    public User(String firstnameIn, String lastnameIn, String usernameIn,
-            boolean genderIn, Date birthdayIn, Citizenship citizenshipIn,
-            String passportIn, String homePhoneIn, String cellPhoneIn,
-            String addressIn, String emailIn) {
-        this.firstname = firstnameIn;
-        this.lastname = lastnameIn;
-        this.username = usernameIn;
-        this.gender = genderIn;
-        this.birthday = birthdayIn;
-        this.citizenship = citizenshipIn;
-        this.passport = passportIn;
-        this.homePhone = homePhoneIn;
-        this.cellPhone = cellPhoneIn;
-        this.email = emailIn;
-        this.address = addressIn;
-    }
+   
 
-    public String getAddress() {
+    public User(String firstname, String lastname, String username,
+			String password, boolean gender, String birthday,
+			Citizenship citizenship, String passport, String homePhone,
+			String cellPhone, String email, String address) {
+		super();
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.username = username;
+		this.password = password;
+		this.gender = gender;
+		this.birthday = birthday;
+		this.citizenship = citizenship;
+		this.passport = passport;
+		this.homePhone = homePhone;
+		this.cellPhone = cellPhone;
+		this.email = email;
+		this.address = address;
+	}
+
+	public String getAddress() {
         return this.address;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return this.birthday;
     }
 
@@ -68,8 +74,12 @@ public class User {
     public String getPassport() {
         return this.passport;
     }
+    
+    public String getPassword() {
+		return password;
+	}
 
-    public String getUsername() {
+	public String getUsername() {
         return this.username;
     }
 
@@ -81,7 +91,7 @@ public class User {
         this.address = addressIn;
     }
 
-    public void setBirthday(Date birthdayIn) {
+    public void setBirthday(String birthdayIn) {
         this.birthday = birthdayIn;
     }
 
@@ -117,6 +127,10 @@ public class User {
         this.passport = passportIn;
     }
 
+	public void setPassword(String password) {
+		this.password = password;
+	}
+    
     public void setUsername(String usernameIn) {
         this.username = usernameIn;
     }
