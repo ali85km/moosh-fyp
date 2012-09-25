@@ -31,8 +31,15 @@ public class CommunicationAssessmentValidator extends HttpServlet {
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         // TODO : validate.
-
+    	// TODO : read all the input data from the jsp
+    	// create the related object and fill them
+    	// do validation if needed
+    	// 
+    	
+    	
         // TODO : if good, else.
         response.sendRedirect("job_commitment");
+        // if not good then go to the same form but with the filled datas and errors
+    
     }
 }

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>Sunrise KPI System - Sign up</title>
 <style type="text/css">
 <!--
 body {
@@ -16,6 +16,9 @@ body {
 </head>
 
 <body>
+
+<form id="form14" name="form14" method="post"
+					action="signup_validator">
 	<table width="700" border="4" align="center">
 		<tr>
 			<td><p align="center">
@@ -26,45 +29,46 @@ body {
 			<td>
 				<table width="472" border="0" align="left">
 					<tr>
-						<td width="456"><form id="form1" name="form1" method="post"
-								action="">
+						<td width="456">
+						
+						
+							
 								<div align="left">
-									ID<br /> <input type="text" name="textfield" id="textfield" />
+									ID<br /> <input type="text" name="userid" id="userid" />
 								</div>
-							</form>
-							<form id="form2" name="form2" method="post" action="">
+							
+							
 								<label> Choose your name<br /> <input type="text"
-									name="textfield2" id="textfield2" />
+									name="username" id="username" />
 								</label>
-							</form>
-							<form id="form3" name="form3" method="post" action="">
+							
+							
 								<label>Choose your password<br /> <input type="text"
-									name="textfield3" id="textfield3" />
+									name="password" id="password" />
 								</label>
-							</form>
-							<form id="form4" name="form4" method="post" action="">
+							
+							
 								<label>Confirm your password<br /> <input type="text"
-									name="textfield4" id="textfield4" />
+									name="confirm" id="confirm" />
 								</label>
-							</form>
-							<form id="form5" name="form5" method="post" action="">
-								<label>Name<br /> <input type="text" name="textfield5"
-									id="textfield5" />
+							
+							
+								<label>Name<br /> <input type="text" name="name"
+									id="name" />
 								</label>
-							</form>
-							<form id="form6" name="form6" method="post" action="">
-								<label>Gender <br /> <select name="select4"
-									id="select4">
+							
+							
+								<label>Gender <br /> <select name=gender
+									id="gender">
 										<option>Male</option>
 										<option>Female</option>
 								</select> <br />
 								</label>
-							</form>
+							
 							<p>
 								<label>Birthday</label> &nbsp;
 							</p>
-							<form id="form7" name="form7" method="post" action="">
-								<label>Month <select name="select" id="select">
+									<label>Month <select name="select" id="select">
 										<option>Jan</option>
 										<option>Feb</option>
 										<option>Mar</option>
@@ -124,53 +128,51 @@ body {
 										<option>1981</option>
 								</select>
 								</label>
-							</form>
+							
 							<p>&nbsp;</p>
-							<form id="form8" name="form8" method="post" action="">
+							
 								<label>Citizenship <br /> <input type="text"
 									name="textfield7" id="textfield7" />
 								</label>
-							</form>
-							<form id="form9" name="form9" method="post" action="">
+							
+							
 								<label>IC/Passport number<br /> <input type="text"
 									name="textfield8" id="textfield8" />
 								</label>
-							</form>
-							<form id="form10" name="form10" method="post" action="">
+							
+							
 								<label>Phone number<br /> <input type="text"
 									name="textfield9" id="textfield9" />
 								</label>
-							</form>
-							<form id="form11" name="form11" method="post" action="">
+							
+							
 								<label>Mobile number<br /> <input type="text"
 									name="textfield10" id="textfield10" />
 								</label>
-							</form>
-							<form id="form12" name="form12" method="post" action="">
+							
+							
 								<label>E-mail address<br /> <input type="text"
 									name="textfield11" id="textfield11" />
 								</label>
-							</form>
-							<form id="form13" name="form13" method="post" action="">
+							
+							
 								<label>Address<br /> <textarea name="textarea"
 										id="textarea" cols="45" rows="5"></textarea>
 								</label>
-							</form>
-						</td>
+							</td>
 					</tr>
 				</table>
-		</td>
+			</td>
 		</tr>
 		<tr>
-			<td height="56"><form id="form14" name="form14" method="post"
-					action="signup_validator">
+			<td height="56">
 					<label></label>
 
 
 					<div align="center">
 						<input type="submit" name="button" id="button" value="Submit" />
 					</div>
-				</form></td>
+				</td>
 		</tr>
 		<tr>
 			<td height="41"><div align="center">
@@ -178,5 +180,6 @@ body {
 				</div></td>
 		</tr>
 	</table>
+	</form>
 </body>
 </html>

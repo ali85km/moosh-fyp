@@ -24,7 +24,6 @@ public class User {
 			String password, boolean gender, String birthday,
 			Citizenship citizenship, String passport, String homePhone,
 			String cellPhone, String email, String address) {
-		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.username = username;

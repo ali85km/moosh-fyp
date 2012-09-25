@@ -30,7 +30,10 @@ public class CommunicationAssessment extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
-        this.getServletContext()
+      
+    	// check if any error has been sent, then show on the form 
+    	
+    	this.getServletContext()
                 .getRequestDispatcher(
                         "/WEB-INF/manager/communication_assessment.jsp")
                 .forward(request, response);
