@@ -1,6 +1,7 @@
 package controller.servlet.login.validators;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,46 +10,55 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import model.Citizenship;
+import model.DBQueries;
 import model.User;
 
 /**
  * Servlet implementation class SignupValidator
  */
-@WebServlet(name = "SignupValidator", urlPatterns = { "/signup_validator" })
+@WebServlet(name = "SignupValidator",
+        urlPatterns = {"/signup_validator"})
 public class SignupValidator extends HttpServlet {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
-	public SignupValidator() {
-		super();
-	}
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public SignupValidator() {
+        super();
+    }
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	@Override
+    /**
+     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+     *      response)
+     */
+    @Override
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
 
-		
-		
-		
-		
-    	User user = new User(request.getParameter("username"), request.getParameter("name"),
-    			request.getParameter("userid"), request.getParameter("password"),
-    			request.getParameter("gender"), request.getParameter("bdday") + "/" + request.getParameter("bdmonth") + "/" + request.getParameter("bdyear"),
-    			request.getParameter("citizen"), request.getParameter("passport"),
-    			request.getParameter("homePhone"), request.getParameter("cellPhone"),
-    			request.getParameter("email"), request.getParameter("address"));
-    	
-    	
-    	
-    	System.out.println(user);
-    	
+        User user = new User(request.getParameter("username"),
+                request.getParameter("name"), request.getParameter("userid"),
+                request.getParameter("password"),
+                request.getParameter("gender"), request.getParameter("bdday")
+                        + "/" + request.getParameter("bdmonth") + "/"
+                        + request.getParameter("bdyear"),
+                request.getParameter("citizen"),
+                request.getParameter("passport"),
+                request.getParameter("homePhone"),
+                request.getParameter("cellPhone"),
+                request.getParameter("email"), request.getParameter("address"));
+
+        System.out.println(user);
+
+        DBQueries.connectDB();
+
+        // try {
+        // DBQueries.insertUser(user);
+        // } catch (SQLException e) {
+        // e.printStackTrace();
+        // }
+
         // TODO : make the validation.
 
         // TODO : if the validation is good {
