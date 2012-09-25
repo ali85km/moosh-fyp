@@ -53,11 +53,11 @@ public class SignupValidator extends HttpServlet {
 
         DBQueries.connectDB();
 
-        // try {
-        // DBQueries.insertUser(user);
-        // } catch (SQLException e) {
-        // e.printStackTrace();
-        // }
+        try {
+            DBQueries.insertUser(user);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         // TODO : make the validation.
 
