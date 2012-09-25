@@ -34,16 +34,20 @@ public class SignupValidator extends HttpServlet {
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
 
-		System.out.println(request.getParameter("gender"));
 		
-    	//User user = new User(request.getParameter("firstname"), request.getParameter("lastname"),
-    	//		request.getParameter("username"), request.getParameter("password"),
-    	//		null, request.getParameter("birthday"),
-    	//		null, request.getParameter("passport"),
-    	//		request.getParameter("homePhone"), request.getParameter("cellPhone"),
-    	//		request.getParameter("email"), request.getParameter("address"));
+		
+		
+		
+    	User user = new User(request.getParameter("username"), request.getParameter("name"),
+    			request.getParameter("userid"), request.getParameter("password"),
+    			request.getParameter("gender"), request.getParameter("bdday") + "/" + request.getParameter("bdmonth") + "/" + request.getParameter("bdyear"),
+    			request.getParameter("citizen"), request.getParameter("passport"),
+    			request.getParameter("homePhone"), request.getParameter("cellPhone"),
+    			request.getParameter("email"), request.getParameter("address"));
     	
     	
+    	
+    	System.out.println(user);
     	
         // TODO : make the validation.
 

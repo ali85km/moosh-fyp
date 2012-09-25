@@ -65,10 +65,12 @@ body {
 								</select> <br />
 								</label>
 							
+							
+							
 							<p>
 								<label>Birthday</label> &nbsp;
 							</p>
-									<label>Month <select name="select" id="select">
+									<label>Month <select name="bdmonth" id="bdmonth">
 										<option>Jan</option>
 										<option>Feb</option>
 										<option>Mar</option>
@@ -82,7 +84,7 @@ body {
 										<option>Nov</option>
 										<option>Dec</option>
 								</select>
-								</label> <label>Day <select name="select2" id="select2">
+								</label> <label>Day <select name="bdday" id="bdday">
 										<option>1</option>
 										<option>2</option>
 										<option>3</option>
@@ -115,7 +117,7 @@ body {
 										<option>30</option>
 										<option>31</option>
 								</select>
-								</label> <label>Year <select name="select3" id="select3">
+								</label> <label>Year <select name="bdyear" id="bdyear">
 										<option>1990</option>
 										<option>1989</option>
 										<option>1988</option>
@@ -132,32 +134,32 @@ body {
 							<p>&nbsp;</p>
 							
 								<label>Citizenship <br /> <input type="text"
-									name="textfield7" id="textfield7" />
+									name="citizen" id="citizen" />
 								</label>
 							
 							
 								<label>IC/Passport number<br /> <input type="text"
-									name="textfield8" id="textfield8" />
+									name="passport" id="passport" />
 								</label>
 							
 							
 								<label>Phone number<br /> <input type="text"
-									name="textfield9" id="textfield9" />
+									name="homephone" id="homephone" />
 								</label>
 							
 							
 								<label>Mobile number<br /> <input type="text"
-									name="textfield10" id="textfield10" />
+									name="cellphone" id="cellphone" />
 								</label>
 							
 							
 								<label>E-mail address<br /> <input type="text"
-									name="textfield11" id="textfield11" />
+									name="email" id="email" />
 								</label>
 							
 							
-								<label>Address<br /> <textarea name="textarea"
-										id="textarea" cols="45" rows="5"></textarea>
+								<label>Address<br /> <textarea name="address"
+										id="address" cols="45" rows="5"></textarea>
 								</label>
 							</td>
 					</tr>
