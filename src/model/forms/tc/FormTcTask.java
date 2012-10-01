@@ -1,30 +1,20 @@
-package model;
+package model.forms.tc;
 
 import java.util.Date;
 
-public class Task {
+public class FormTcTask {
 
-    private int id;
     private String title;
     private Date assignDate;
     private Date dueDate;
     private Date endDate;
 
-    public Task(int idIn, String titleIn, Date assignDateIn, Date dueDateIn,
+    public FormTcTask(String titleIn, Date assignDateIn, Date dueDateIn,
             Date endDateIn) {
-        this.id = idIn;
         this.title = titleIn;
         this.assignDate = assignDateIn;
         this.dueDate = dueDateIn;
         this.endDate = endDateIn;
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public void setId(int idIn) {
-        this.id = idIn;
     }
 
     public String getTitle() {
@@ -58,5 +48,4 @@ public class Task {
     public void setEndDate(Date endDateIn) {
         this.endDate = endDateIn;
     }
-
 }

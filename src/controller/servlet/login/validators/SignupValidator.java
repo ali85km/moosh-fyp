@@ -9,9 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.Citizenship;
-import model.DBQueries;
 import model.User;
+import model.database.DBQueries;
 
 /**
  * Servlet implementation class SignupValidator
