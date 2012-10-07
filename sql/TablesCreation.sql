@@ -1,8 +1,8 @@
 	CREATE TABLE User(
 			user_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-			user_fname VARCHAR(50) NOT NULL,
+			user_fname VARCHAR(50),
 			user_lname VARCHAR(50),
-			user_uname INT NOT NULL UNIQUE,
+			user_uname VARCHAR(50) NOT NULL,
 			user_password VARCHAR(50) NOT NULL,
 			user_gender VARCHAR(50),
 			user_dob VARCHAR(10),

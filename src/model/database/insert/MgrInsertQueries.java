@@ -1,8 +1,9 @@
-package model.database;
+package model.database.insert;
 
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import model.database.DBConnection;
 import model.forms.mgr.FormMgrCommAssess;
 import model.forms.mgr.FormMgrCommitment;
 import model.forms.mgr.FormMgrEmpAssess;
@@ -10,11 +11,11 @@ import model.forms.mgr.FormMgrMonitoring;
 import model.forms.mgr.FormMgrPersAssess;
 import model.forms.mgr.FormMgrWorkAssess;
 
-public class MgrQueries {
+public class MgrInsertQueries {
 
     public static void insertFormMgrMonitoring(FormMgrMonitoring form)
             throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         statement.executeUpdate("INSERT INTO FormMgrMonitoring ("
                 + "formmgrmonitoring_question1, "
                 + "formmgrmonitoring_question2, "
@@ -40,7 +41,7 @@ public class MgrQueries {
 
     public static void insertFormMgrWorkAssess(FormMgrWorkAssess form)
             throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         statement.executeUpdate("INSERT INTO FormMgrWorkAssess ("
                 + "formmgrworkassess_question1, "
                 + "formmgrworkassess_question2, "
@@ -66,7 +67,7 @@ public class MgrQueries {
 
     public static void insertFormMgrCommAssess(FormMgrCommAssess form)
             throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         statement.executeUpdate("INSERT INTO FormMgrCommAssess ("
                 + "formmgrcommassess_question1, "
                 + "formmgrcommassess_question2, "
@@ -84,7 +85,7 @@ public class MgrQueries {
 
     public static void insertFormMgrCommitment(FormMgrCommitment form)
             throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         statement.executeUpdate("INSERT INTO FormMgrCommitment ("
                 + "formmgrcommitment_question1" + "formmgrcommitment_question2"
                 + "formmgrcommitment_question3" + "formmgrcommitment_question4"
@@ -98,7 +99,7 @@ public class MgrQueries {
 
     public static void insertFormMgrEmpAssess(FormMgrEmpAssess form)
             throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         statement.executeUpdate("INSERT INTO FormMgrEmpAssess ("
                 + "formmgrworkassess_question1, "
                 + "formmgrworkassess_question2, "
@@ -178,7 +179,7 @@ public class MgrQueries {
 
     public static void insertFormMgrPersAssess(FormMgrPersAssess form)
             throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         statement.executeUpdate("INSERT INTO FormMgrPersAssess ("
                 + "formmgrpersassess_question1, "
                 + "formmgrpersassess_question2, "

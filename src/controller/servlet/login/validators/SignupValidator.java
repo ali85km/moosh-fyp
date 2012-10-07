@@ -1,6 +1,7 @@
 package controller.servlet.login.validators;
 
 import java.io.IOException;
+import java.security.GeneralSecurityException;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
@@ -10,7 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import model.User;
-import model.database.DBQueries;
+import model.database.DBConnection;
+import model.database.insert.GeneralInsertQueries;
+import model.database.select.GeneralSelectQueries;
 
 /**
  * Servlet implementation class SignupValidator
@@ -36,24 +39,33 @@ public class SignupValidator extends HttpServlet {
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
 
-        User user = new User(request.getParameter("username"),
-                request.getParameter("name"), request.getParameter("userid"),
+        User user = new User(request.getParameter("fname"),
+                request.getParameter("lname"), request.getParameter("uname"),
                 request.getParameter("password"),
                 request.getParameter("gender"), request.getParameter("bdday")
                         + "/" + request.getParameter("bdmonth") + "/"
                         + request.getParameter("bdyear"),
                 request.getParameter("citizen"),
                 request.getParameter("passport"),
-                request.getParameter("homePhone"),
-                request.getParameter("cellPhone"),
+                request.getParameter("homephone"),
+                request.getParameter("cellphone"),
                 request.getParameter("email"), request.getParameter("address"));
 
         System.out.println(user);
 
-        DBQueries.connectDB();
+        DBConnection.connectDB();
 
         try {
-            DBQueries.insertUser(user);
+            GeneralInsertQueries.insertUser(user);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            User copy = GeneralSelectQueries.selectUser(
+                    request.getParameter("uname"),
+                    request.getParameter("password"));
+            System.out.println(copy.toString());
         } catch (SQLException e) {
             e.printStackTrace();
         }

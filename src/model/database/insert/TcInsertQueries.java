@@ -1,8 +1,9 @@
-package model.database;
+package model.database.insert;
 
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import model.database.DBConnection;
 import model.forms.tc.FormTcAnnouncement;
 import model.forms.tc.FormTcCommitment;
 import model.forms.tc.FormTcContact;
@@ -15,11 +16,11 @@ import model.forms.tc.FormTcWorkHours;
 import model.forms.tc.FormTcWorkHours.WeekWorkHours;
 import model.forms.tc.FormTcWorkLife;
 
-public class TcQueries {
+public class TcInsertQueries {
 
     public static void insertFormTcCommitment(FormTcCommitment form)
             throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         statement.executeUpdate("INSERT INTO FormTcCommitment ("
                 + "formtccommitment_question1, "
                 + "formtccommitment_question2, "
@@ -38,7 +39,7 @@ public class TcQueries {
 
     public static void insertFormTcAnnouncement(FormTcAnnouncement form)
             throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         statement.executeUpdate("INSERT INTO FormTcAnnouncement ("
                 + "formtcannouncement_question1a, "
                 + "formtcannouncement_question2a, "
@@ -58,7 +59,7 @@ public class TcQueries {
 
     public static void insertFormTcContact(FormTcContact form)
             throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         Contact contact1 = form.getContactWeek1();
         statement.executeUpdate("INSERT INTO FormTcContact ("
                 + "formtccontact_serie, " + "formtccontact_week, "
@@ -110,7 +111,7 @@ public class TcQueries {
 
     public static void insertFormTcEquipment(FormTcEquipment form)
             throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         statement.executeUpdate("INSERT INTO FormTcEquipment ("
                 + "formtcequipment_phoneline, "
                 + "formtcequipment_answermachine, "
@@ -151,7 +152,7 @@ public class TcQueries {
 
     public static void insertFormTcMeeting(FormTcMeeting form)
             throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         Meeting meeting1 = form.getMeetingWeek1();
         statement.executeUpdate("INSERT INTO FormTcMeeting ("
                 + "formtcmeeting_serie, " + "formtcmeeting_week, "
@@ -206,7 +207,7 @@ public class TcQueries {
     }
 
     public static void insertFormTcTask(FormTcTask form) throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         statement.executeUpdate("INSERT INTO FormTcTask ("
                 + "formtctask_tasktitle, " + "formtctask_assigndate, "
                 + "formtctask_duedate, " + "formtctask_enddate, "
@@ -221,7 +222,7 @@ public class TcQueries {
     public static void insertFormTcWorkHours(FormTcWorkHours form)
             throws SQLException {
         // FIXME : the number of the serie ? How to put it ?
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         WeekWorkHours weekWorkHours1 = form.getWorkHoursWeek1();
         statement.executeUpdate("INSERT INTO FormTcWorkHours ("
                 + "formtcweekworkhours_serie, " + "formtcweekworkhours_week, "
@@ -291,7 +292,7 @@ public class TcQueries {
 
     public static void insertFormTcWorkLife(FormTcWorkLife form)
             throws SQLException {
-        Statement statement = DBQueries.connexion.createStatement();
+        Statement statement = DBConnection.connection.createStatement();
         statement.executeUpdate("INSERT INTO FormTcWorkLife ("
                 + "formtcworklife_question1, " + "formtcworklife_question2, "
                 + "formtcworklife_question3, " + "formtcworklife_question4, "
@@ -302,7 +303,7 @@ public class TcQueries {
     }
 
     public static void selectFormTcWorkLife() {
-
+        // TODO
     }
 
 }

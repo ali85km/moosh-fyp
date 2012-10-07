@@ -34,12 +34,12 @@ body {
 						
 							
 								<div align="left">
-									ID<br /> <input type="text" name="userid" id="userid" />
+									FName<br /> <input type="text" name="fname" id="fname" />
 								</div>
 							
 							
-								<label> Choose your name<br /> <input type="text"
-									name="username" id="username" />
+								<label>LName<br /> <input type="text"
+									name="lname" id="lname" />
 								</label>
 							
 							
@@ -53,8 +53,8 @@ body {
 								</label>
 							
 							
-								<label>Name<br /> <input type="text" name="name"
-									id="name" />
+								<label>UName<br /> <input type="text" name="uname"
+									id="uname" />
 								</label>
 							
 							
