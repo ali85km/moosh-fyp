@@ -14,21 +14,23 @@ public class DBConnection {
         /* Chargement du driver JDBC pour MySQL */
         try {
             Class.forName("com.mysql.jdbc.Driver");
+            //connectDB();
         } catch (ClassNotFoundException e) {
             /* Gérer les éventuelles erreurs ici. */
         }
     }
 
-    public static void connectDB() {
+    public static Connection connectDB() {
         // TODO : remember to close the database sometimes.
         String url = "jdbc:mysql://localhost:3306/test";
         String utilisateur = "test";
         String motDePasse = "test";
         try {
-            DBConnection.connection = DriverManager.getConnection(url,
+            return DriverManager.getConnection(url,
                     utilisateur, motDePasse);
         } catch (SQLException e) {
             e.printStackTrace();
+            return null;
         }
     }
 }

@@ -1,83 +1,159 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE  html>
+<html>
+	<head>
+	
+		<meta charset="utf-8">
+		<title>Telecommuter</title>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/LargeStyle.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/social-icons.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/login.css" media="screen">
+        <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="css/calendar.css" />
+		<!-- ENDS CSS -->	
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<link rel="shortcut icon" href="rsc/favicon.ico">
-<link rel="icon" type="image/gif" href="rsc/animated_favicon1.gif">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Sunrise KPI System</title>
-<style type="text/css">
-<!--
-body {
-	background-image: url(rsc/background.jpg);
-}
+		
+		<!-- JS -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script src="js/slides/source/slides.min.jquery.js"></script>
+		<script src="js/quicksand.js"></script>
+        <script type="text/javascript" src="js/calendar.js"></script>
+		
+		<!-- superfish -->
+		<link rel="stylesheet" media="screen" href="css/superfish.css" /> 
+		<script type="text/javascript" src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+		<script type="text/javascript" src="js/superfish-1.4.8/js/superfish.js"></script>
+		<script type="text/javascript" src="js/superfish-1.4.8/js/supersubs.js"></script>
+		<!-- ENDS superfish -->
 
-.style1 {
-	color: #CCCCCC;
-	font-weight: bold;
-}
+		<!-- poshytip -->
+		<link rel="stylesheet" href="js/poshytip-1.0/src/tip-twitter/tip-twitter.css" type="text/css" />
+		<link rel="stylesheet" href="js/poshytip-1.0/src/tip-yellowsimple/tip-yellowsimple.css" type="text/css" />
+		<script type="text/javascript" src="js/poshytip-1.0/src/jquery.poshytip.min.js"></script>
+		<!-- ENDS poshytip -->
+		
+		<!-- Tweet -->
+		<link rel="stylesheet" href="css/jquery.tweet.css" media="all"  type="text/css"/> 
+		<script src="js/tweet/jquery.tweet.js" type="text/javascript"></script> 
+		<!-- ENDS Tweet -->
+		
+		<!-- prettyPhoto -->
+		<script type="text/javascript" src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+		<link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" />
+		<!-- ENDS prettyPhoto -->
+		
+		<!-- GOOGLE FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
 
-.style4 {
-	color: #CCCCCC
-}
+		
+	</head>
+	
+	<body>
+	
+		<!-- Dynamic Background -->
+		<div id="headerimgs">
+			<div id="headerimg1" class="headerimg"></div>
+			<div id="headerimg2" class="headerimg"></div>
+		</div>
+		<!-- ENDS Dynamic Background -->
+		
+		<!-- background nav -->
+		<div id="headernav">
+			<div id="back" class="btn"></div>
+			<div id="next" class="btn"></div>
+		</div>
+		<!-- ENDS background nav -->
+		
+		<div id="top-gap"></div>
 
-.style5 {
-	color: #333333
-}
--->
-</style>
-<script src="rsc/SpryMenuBar.js" type="text/javascript"></script>
-<link href="rsc/SpryMenuBarHorizontal.css" rel="stylesheet"
-	type="text/css" />
-<link href="rsc/SpryMenuBarVertical.css" rel="stylesheet"
-	type="text/css" />
-</head>
+		<!-- wrapper -->
+		<div class="wrapper">
+			<a href="index.html"><img  id="logo" src="img\logo.jpg" alt="Kroft"></a>
+			
+			<!-- nav bar holder -->
+			<div id="nav-bar-holder">
+				<!-- Navigation -->
+				<ul id="nav" class="sf-menu">
+					<li><a href="./telecommuter">Home</a></li>
+					<li><a href="./result">Result</a></li>
+					<li><a href="">Forms</a>
+						<ul>
+							<li><a href="">View Forms</a></li>
+							<li><a href="./telecommuterform">Fill Forms</a></li>
+						</ul>
+					</li>
+					<li><a href="./">Logout</a></li>
+				</ul>
+				<!-- ENDS Navigation -->
+				
+				<!-- Social -->
+				<ul class="social">
+					<li><a href="http://www.facebook.com" class="poshytip  facebook" title="Become a fan"></a></li>
+					<li><a href="http://www.twitter.com" class="poshytip  twitter" title="Follow my tweets"></a></li>
+					<li><a href="http://www.mmu.edu.my" class="poshytip  dribbble" title="Multimedia University"></a></li>
+				</ul>
+				<!-- ENDS Social -->
+			</div>
+			<!-- ENDS nav bar holder -->
+				
+			<!-- content wrap -->	    	
+	        <div id="content-wrap">
+	        	
+	        	<!-- Page wrap -->
+	        	<div id="page-wrap">
+					<div class="page-title"><h1>Telecommuter</h1> <span>Welcome to Sunrise KPI System</span></div>
 
-<body>
-	<table width="800" height="665" border="4" align="center">
-		<tr>
-			<td height="189"><img src="rsc/title.jpg"
-				width="781" height="218" /></td>
-		</tr>
-		<tr>
-			<td height="60"><ul id="MenuBar1" class="MenuBarHorizontal">
-					<li><a class="MenuBarItemSubmenu" href="#">Forms</a>
-						<ul>									
-					<li><a href="#">View Forms</a></li>
-					<li><a href="equipment_usage">Fill Forms</a></li>
-						</ul></li>
-					<li><a href="#">Result</a></li>
-					<li><a href="index">Logout</a></li>
-				</ul></td>
-		</tr>
-		<tr>
+					<!-- side content -->
+					<div id="side-content">
+						<!-- single -->
+						<div class="single-post">
+							<div class="post">
+								<div class="post-feature-img">
+									<img src="img/My image/telework.jpg" alt="Pic" />
+								</div>
+								<img src="img/feature-post-shadow.png" alt="shadow" />
+								
+								<h4><!------INTRO------></h4>
+								<div class="content"></div>	
+							</div>
+						</div>	
+						<!-- ENDS single -->											
+					</div>
+					<!-- ENDS side content -->
+						
+					<!-- sidebar -->
+					<div id="sidebar">
+						<div class="sideblock">
+							<h6 class="side-title">Calendar</h6>	
+				    	</div>
+						<!-- calandar -->
+						<script type="text/javascript">
+							calendar();
+						</script>
+					</div>
+					<!-- ENDS sidebar -->
+						        	
+	        	</div>
+	        	<!-- ENDS Page wrap -->
+	        </div>
+	        <!-- ENDS content wrap -->
+        </div>
+		<!-- ENDS Wrapper -->
 
-			<td align="center" width="385"><p class="style5">
-					Welcome to the Sunrise KPI system.<br /> Please fill-up your
-					forms.
-				</p>
-				<p>
-					<strong><span class="style5">&quot;Your patient is
-							appreciated&quot;</span></strong>
-				</p></td>
-		</tr>
-		<tr>
-			<td height="42" colspan="2"><p align="center" class="style1">
-					<strong><span class="style5">Copyright © 2012
-							Sunrise Inc. All rights reserved.</span><br /> </strong>
-				</p></td>
-		</tr>
-	</table>
-	<script type="text/javascript">
-	<!--
-		var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {
-			imgDown : "rsc/SpryMenuBarDownHover.gif",
-			imgRight : "rsc/SpryMenuBarRightHover.gif"
-		});
-	//-->
-	</script>
-</body>
+		<!-- FOOTER -->
+
+		<!-- footer-bottom -->
+		<div id="footer-bottom">
+			<div class="bottom-wrapper">
+				<div id="bottom-left">
+					&copy; Copyright Â© 2012 Sunrise Inc. All rights reserved.
+				</div>
+				
+			</div>
+		</div>
+		<!-- ENDS footer-bottom --> 
+	</body>
 </html>

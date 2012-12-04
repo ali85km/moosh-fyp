@@ -28,7 +28,7 @@ public class Signup extends HttpServlet {
      *      response)
      */
     @Override
-    protected void doGet(HttpServletRequest request,
+    protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         this.getServletContext()
                 .getRequestDispatcher("/WEB-INF/login/signup.jsp")

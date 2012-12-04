@@ -1,70 +1,213 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<link rel="shortcut icon" href="rsc/favicon.ico">
-<link rel="icon" type="image/gif" href="rsc/animated_favicon1.gif">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Sunrise KPI System</title>
-<style type="text/css">
-<!--
-body {
-	background-image: url(rsc/background.jpg);
-}
-.style1 {
-	color: #CCCCCC;
-	font-weight: bold;
-}
-.style6 {color: #000000}
-.style7 {
-	color: #000000;
-	font-weight: bold;
-}
-.style8 {color: #FFFFFF; font-weight: bold; }
--->
-</style>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>Homepage</title>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/social-icons.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/login.css" media="screen">
+		<!-- ENDS CSS -->	
+		
+		<!--[if IE]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- ENDS JS -->
+		
+		<!-- JS -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script src="js/slides/source/slides.min.jquery.js"></script>
+		<script src="js/quicksand.js"></script>
+		
+		<!-- superfish -->
+		<link rel="stylesheet" media="screen" href="css/superfish.css" /> 
+		<script type="text/javascript" src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+		<script type="text/javascript" src="js/superfish-1.4.8/js/superfish.js"></script>
+		<script type="text/javascript" src="js/superfish-1.4.8/js/supersubs.js"></script>
+		<!-- ENDS superfish -->
 
-<body>
-<table width="800" height="589" border="0" align="center">
-  <tr>
-    <td height="317"><div align="center"><img src="rsc/homepage.jpg" width="457" height="263" /></div></td>
-  </tr>
-  <tr>
-    <td height="60"><p align="center" class="style8">WELCOME TO THE SUNRISE KPI  SYSTEM.</p>    </td>
-  </tr>
-  <tr>
-    <td height="142"><p align="center" class="style8">This system is built regarding the FYP project.</p>
-      <p align="center" class="style8">The main usage of this system is  for SOHO environment.</p>
-      <div align="center"><span class="style8">The purpose of this system is evaluating the performance, monitoring and controlling the telecommuters.</span></div>
-      <span class="style7"><label></label>
-      </span>
-      <div align="center"><span class="style7">
-      </span></div>
-      <span class="style7"><label></label>
-      </span>
-      <div align="center"><span class="style6"><strong>
-      </strong></span></div>
-      <span class="style6"><strong><label></label>
-      </strong>
-      <label></label>
-    </span></td>
-  </tr>
-  <tr>
-    <td height="36"><div align="center">
-      <form id="form1" name="form1" method="get" action="login">
-        <label>
-        <input name="button" type="submit" class="style6" id="button" value="Proceed" />
-        </label>
-      </form>
-      </div></td>
-  </tr>
-  <tr>
-    <td height="21"><p align="center" class="style1"><span class="style6">Copyright © 2012 Sunrise Inc. All rights reserved.</span><br />
-    </p></td>
-  </tr>
-</table>
-</body>
+		<!-- poshytip -->
+		<link rel="stylesheet" href="js/poshytip-1.0/src/tip-twitter/tip-twitter.css" type="text/css" />
+		<link rel="stylesheet" href="js/poshytip-1.0/src/tip-yellowsimple/tip-yellowsimple.css" type="text/css" />
+		<script type="text/javascript" src="js/poshytip-1.0/src/jquery.poshytip.min.js"></script>
+		<!-- ENDS poshytip -->
+		
+		<!-- Tweet -->
+		<link rel="stylesheet" href="css/jquery.tweet.css" media="all"  type="text/css"/> 
+		<script src="js/tweet/jquery.tweet.js" type="text/javascript"></script> 
+		<!-- ENDS Tweet -->
+		
+		<!-- prettyPhoto -->
+		<script type="text/javascript" src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+		<link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" />
+		<!-- ENDS prettyPhoto -->
+		
+		<!-- GOOGLE FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+	
+		<!-- Dynamic Background -->
+		<div id="headerimgs">
+			<div id="headerimg1" class="headerimg"></div>
+			<div id="headerimg2" class="headerimg"></div>
+		</div>
+		<!-- ENDS Dynamic Background -->
+		
+		<!-- background nav -->
+		<div id="headernav">
+			<div id="back" class="btn"></div>
+			<div id="next" class="btn"></div>
+		</div>
+		<!-- ENDS background nav -->
+		
+		<div id="top-gap"></div>
+
+		<!-- wrapper -->
+		<div class="wrapper">
+		
+			<img  id="logo" src="img\logo.jpg" alt="Kroft"></a>
+			
+			
+			<!-- nav bar holder -->
+			<div id="nav-bar-holder">
+			
+				
+				<!-- Social -->
+				<ul class="social">
+					<li><a href="http://www.facebook.com" class="poshytip  facebook" title="Become a fan"></a></li>
+					<li><a href="http://www.twitter.com" class="poshytip  twitter" title="Follow my tweets"></a></li>
+					<li><a href="http://www.mmu.edu.my" class="poshytip  dribbble" title="Multimedia University"></a></li>
+				</ul>
+				<!-- ENDS Social -->
+			</div>
+			<!-- ENDS nav bar holder -->
+				
+			<!-- content wrap -->	    	
+	        <div id="content-wrap">
+	        	
+	        	<!-- Page wrap -->
+	        	<div id="page-wrap">
+	        	
+					<div class="page-title"><h1>SUNRISE</h1> <span>Welcome Sunrise KPI System</span></div>
+					
+					<!-- side content -->
+					<div id="side-content">
+					
+						<!-- single -->
+						<div class="single-post">
+							<div class="post">
+								<div class="post-feature-img">
+									<img src="img/My image/HomeLogo.jpg" alt="Pic" />
+								</div>
+								<img src="img/feature-post-shadow.png" alt="shadow" />
+								
+								<h4>Introduction</h4>
+								<div class="content">
+									<p>This system is built regarding to the FYP project.
+
+The main usage of this system is for SOHO environment.
+
+The purpose of this system is to build an object oriented system to evaluate the performance of telecommuters - people who work outside of the office building- and monitor and controlling of Telework.</p>
+																	
+									
+									</div>
+								
+								
+								
+								
+							</div>
+								
+						</div>	
+						<!-- ENDS single -->
+											
+						
+					</div>
+					<!-- ENDS side content -->
+					
+					<!-- sidebar -->
+					<div id="sidebar">
+						<div class="sideblock">
+							<h6 class="side-title">Project info</h6>
+							<ul class="project-info">
+								<li class="date">1 Feb, 2013</li>
+								<li class="client">Moozhan Khadem Mohtaram</li>
+								<li class="client">Shila Jahanbin</li>
+                                <li class="link"><a href="www.SunriseInc.com">Sunrise.com</a></li>
+								<li class="info"><p><strong>Additional info.
+       </strong></p><p>Supervisor: Helmi Mohamed Hussain
+ 				Moderator:  Mr Goh Chien Le</p></li>
+							</ul>
+				    	</div>
+				    	
+				    	<div class="sideblock">
+							<h6 class="side-title">Login</h6>
+
+<div class="login-form">
+
+
+	<form method="post" action="login" >
+
+		<input type="text" name="username" placeholder="username">
+		
+		<input type="password" name="password" placeholder="password">
+		
+		<span style="color:green">
+			<a href="./signup">Create User</a>
+		</span>
+		<span style="color:red">
+			<a href="./telecommuter">Temp Teleworker</a>
+		</span>
+		<span style="color:blue">
+			<a href="./manager">Temp Manager</a>
+		</span>
+		
+		<input type="submit" value="log in">
+
+	</form>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/login-form.js"></script>
+				    	</div>
+				    	
+					</div>
+					<!-- ENDS sidebar -->
+					
+					<div class="clear"></div>
+	        	
+	        	</div>
+	        	<!-- ENDS Page wrap -->
+	        	
+	        </div>
+	        <!-- ENDS content wrap -->
+	        
+        </div>
+		<!-- ENDS Wrapper -->
+		
+		<!-- FOOTER -->
+		<div id="footer">
+			<div class="footer-wrapper">
+				
+
+		
+		<!-- footer-bottom -->
+		<div id="footer-bottom">
+			<div class="bottom-wrapper">
+				<div id="bottom-left">
+					&copy; Copyright Â© 2012 Sunrise Inc. All rights reserved.
+				</div>
+				
+			</div>
+		</div>
+		<!-- ENDS footer-bottom --> 
+
+
+		
+	</body>
 </html>
-
-
