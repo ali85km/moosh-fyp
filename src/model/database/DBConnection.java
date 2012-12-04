@@ -20,14 +20,15 @@ public class DBConnection {
         }
     }
 
+    
     public static Connection connectDB() {
         // TODO : remember to close the database sometimes.
         String url = "jdbc:mysql://localhost:3306/test";
-        String utilisateur = "test";
-        String motDePasse = "test";
-        try {
+        String username = "test2";
+        String password = "1234";
+        try {  
             return DriverManager.getConnection(url,
-                    utilisateur, motDePasse);
+                    username, password);
         } catch (SQLException e) {
             e.printStackTrace();
             return null;

@@ -1,6 +1,11 @@
-<!DOCTYPE  html>
-<html>
-	<head>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
 	
 	     <!-- Head of fancy sign up -->
 		<title>Signup</title>
@@ -151,12 +156,12 @@
             <h1>SIGNUP</h1>
             <div id="wrapper">
                 <div id="steps">
-                    <form id="formElem" name="formElem" action="./signup_validator"  method="post">
+                    <form id="formElem" name="formElem" action="./signupvalidator"  method="post">
                         <fieldset class="step">
                             <legend>Account</legend>
                             <p>
-                                <label for="username">User name</label>
-                                <input id="username" maxlength="12" name="username" placeholder="Maximum 12 Character" />
+                                <label for="uname">User name</label>
+                                <input id="uname" maxlength="12" name="uname" placeholder="Maximum 12 Character" />
                             </p>
                             <p>
                                 <label for="password">Password</label>

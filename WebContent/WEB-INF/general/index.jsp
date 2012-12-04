@@ -156,19 +156,16 @@ The purpose of this system is to build an object oriented system to evaluate the
 		
 		<input type="password" name="password" placeholder="password">
 		
-		<span style="color:green">
-			<a href="./signup">Create User</a>
-		</span>
-		<span style="color:red">
-			<a href="./telecommuter">Temp Teleworker</a>
-		</span>
-		<span style="color:blue">
-			<a href="./manager">Temp Manager</a>
-		</span>
-		
 		<input type="submit" value="log in">
 
+		<span> <a href="./signup">Create User</a>
+			<a href="./telecommuter">Temp Teleworker</a>
+			<a href="./manager">Temp Manager</a>
+		</span>
+	
 	</form>
+	
+	
 
 </div>
 
