@@ -7,7 +7,19 @@ public class FormTcMeeting {
     private Meeting meetingWeek3;
     private Meeting meetingWeek4;
 
-    public Meeting getMeetingWeek1() {
+    public FormTcMeeting(String parameter, String parameter2,
+			String parameter3, String parameter4, String parameter5,
+			String parameter6, String parameter7, String parameter8,
+			String parameter9, String parameter10, String parameter11,
+			String parameter12, String parameter13, String parameter14,
+			String parameter15, String parameter16, String parameter17,
+			String parameter18, String parameter19, String parameter20,
+			String parameter21, String parameter22, String parameter23,
+			String parameter24) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Meeting getMeetingWeek1() {
         return this.meetingWeek1;
     }
 
@@ -25,9 +37,9 @@ public class FormTcMeeting {
 
     public class Meeting {
 
-        private int audioTotal;
+        private int audioConduct;
         private int audioAttend;
-        private int videoTotal;
+        private int videoConduct;
         private int videoAttend;
         private int facetofaceConduct;
         private int facetofaceAttend;
@@ -36,8 +48,8 @@ public class FormTcMeeting {
             return this.audioAttend;
         }
 
-        public int getAudioTotal() {
-            return this.audioTotal;
+        public int getAudioConduct() {
+            return this.audioConduct;
         }
 
         public int getFacetofaceAttend() {
@@ -52,8 +64,8 @@ public class FormTcMeeting {
             return this.videoAttend;
         }
 
-        public int getVideoTotal() {
-            return this.videoTotal;
+        public int getVideoConduct() {
+            return this.videoConduct;
         }
     }
 }

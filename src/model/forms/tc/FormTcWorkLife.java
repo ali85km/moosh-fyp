@@ -9,7 +9,12 @@ public class FormTcWorkLife {
     private Question question3;
     private Question question4;
 
-    public Question getQuestion1() {
+    public FormTcWorkLife(String q1, String q2,
+			String q3, String q4) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Question getQuestion1() {
         return this.question1;
     }
 

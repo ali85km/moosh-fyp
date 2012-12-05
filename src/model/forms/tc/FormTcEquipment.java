@@ -18,27 +18,28 @@ public class FormTcEquipment {
     private boolean voicemail;
     private boolean internet;
 
-    public FormTcEquipment(boolean phonelineIn, boolean answermachineIn,
-            boolean bookcaseIn, boolean callingcardIn, boolean computerIn,
-            boolean deskIn, boolean facsimileIn, boolean filecabinetIn,
-            boolean modemIn, boolean pagerIn, boolean printerIn,
-            boolean softwareIn, boolean typewriterin, boolean voicemailIn,
-            boolean internetIn) {
-        this.phoneline = phonelineIn;
-        this.answermachine = answermachineIn;
-        this.bookcase = bookcaseIn;
-        this.callingcard = callingcardIn;
-        this.computer = computerIn;
-        this.desk = deskIn;
-        this.facsimile = facsimileIn;
-        this.filecabinet = filecabinetIn;
-        this.modem = modemIn;
-        this.pager = pagerIn;
-        this.printer = printerIn;
-        this.software = softwareIn;
-        this.typewriter = typewriterin;
-        this.voicemail = voicemailIn;
-        this.internet = internetIn;
+    public FormTcEquipment(String p1, String p2,
+            String p3, String p4, String p5,
+            String p6, String p7, String p8,
+            String p9, String p10, String p11,
+            String p12, String p13, String p14,
+            String p15) {
+        /*
+    	this.phoneline = p1;
+        this.answermachine = p2;
+        this.bookcase = p3;
+        this.callingcard = p4;
+        this.computer = p5;
+        this.desk = p6;
+        this.facsimile = p7;
+        this.filecabinet = p8;
+        this.modem = p9;
+        this.pager = p10;
+        this.printer = p11;
+        this.software = p12;
+        this.typewriter = p13;
+        this.voicemail = p14;
+        this.internet = p15; */
     }
 
     public boolean isPhoneline() {

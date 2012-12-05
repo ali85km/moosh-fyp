@@ -12,7 +12,13 @@ public class FormTcCommitment {
     private Question question6;
     private Question question7;
 
-    public Question getQuestion1() {
+    public FormTcCommitment(String q1, String q2,
+			String q3, String q4, String q5,
+			String q6, String q7) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Question getQuestion1() {
         return this.question1;
     }
 
